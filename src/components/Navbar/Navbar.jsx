@@ -3,7 +3,7 @@ import { AppBar,Toolbar,Badge,IconButton,Menu,MenuItem,Typography} from '@materi
 import { ShoppingCart } from '@material-ui/icons'
 import logo from '../../assests/brandlogo.png'
 import useStyles from './styles'
-const Navbar = () => {
+const Navbar = ({totalItems}) => {
     const classes = useStyles()
   return (
     <>
@@ -16,8 +16,9 @@ const Navbar = () => {
             </Typography>
             <div className={classes.grow}/>
             <div className={classes.button}>
+                {totalItems}
                 <IconButton aria-label="Show-Cart-Items" color='inherit'>
-                    <Badge BadgeContent={2} color='secondary'>
+                    <Badge BadgeContent={totalItems} color='Secondary'>
                         <ShoppingCart/>
                     </Badge>
                 </IconButton>
