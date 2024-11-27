@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React-YATUN
+          Learn React-VArun
         </a>
       </header>
     </div>
